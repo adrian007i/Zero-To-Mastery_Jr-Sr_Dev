@@ -8,7 +8,6 @@ const database = [
 
 
 const googleSearch = (input, db) =>{
-    input = input.trim("");
     
     const results = db.filter(website => {
         return website.includes(input)

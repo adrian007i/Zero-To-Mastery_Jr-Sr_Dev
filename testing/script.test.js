@@ -1,9 +1,5 @@
 const googleSearch = require("./script");
 
-it("this is a test", () => {
-    expect("hello").toBe("hello")
-});
-
 const mockDB = [
     "cats.com",
     "dogs.com",
@@ -12,7 +8,22 @@ const mockDB = [
     "catarina.com"
 ]
 
+describe("Search Engine", () => {
 
-it("is searching google" , ()=>{
-    expect(googleSearch("cat",mockDB)).toEqual(["cats.com", "categoriesofsoups.com"])    
-})
+    it("this is a test", () => {
+        expect("hello").toBe("hello")
+    });
+
+    it("is searching google", () => {
+        expect(googleSearch("cat", mockDB)).toEqual(["cats.com", "categoriesofsoups.com"])
+    })
+
+    it("works with null and undefined", () => {
+        expect(googleSearch(undefined, mockDB)).toEqual([])
+    });
+
+    it("returns 2 or less results", () => {
+        expect(googleSearch("cat", mockDB).length).toBeLessThan(3);
+    });
+});
+

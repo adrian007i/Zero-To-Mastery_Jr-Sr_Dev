@@ -1,0 +1,6 @@
+Unit test - used to test small functions in code
+
+Integration test - used to infastructure to ensure they work well with each other
+
+Automation testing - End to End - UI testing, to simulate user behavior
+
