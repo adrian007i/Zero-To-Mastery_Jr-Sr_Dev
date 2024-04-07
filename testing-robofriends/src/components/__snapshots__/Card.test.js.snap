@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Card component 1`] = `
+<h1
+  class="f1 hi"
+  id="hello"
+>
+  RoboFriends
+</h1>
+`;
