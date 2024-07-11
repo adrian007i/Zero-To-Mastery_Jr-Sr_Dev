@@ -5,4 +5,11 @@ res.set({
 })
 
  
+// npm install helmet --- this remove descriptive headers
+
+
+// CORS -  CROSS ORIGIN RESOURCE SECURITY - ALLOWS YOU TO WHITELIST WHO CAN ACCESS YOUR ENDPOINT
+
+
+
 
